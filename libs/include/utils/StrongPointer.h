@@ -57,6 +57,11 @@ inline bool operator _op_ (const wp<U>& o) const {              \
 
 template<typename T>
 class sp {
+private:    
+    template<typename Y> friend class sp;
+    template<typename Y> friend class wp;
+    void set_pointer(T* ptr);
+    T* m_ptr;
 public:
     inline sp() : m_ptr(0) { }
 
@@ -97,11 +102,6 @@ public:
     COMPARE(<=)
     COMPARE(>=)
 
-private:    
-    template<typename Y> friend class sp;
-    template<typename Y> friend class wp;
-    void set_pointer(T* ptr);
-    T* m_ptr;
 };
 
 #undef COMPARE

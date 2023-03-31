@@ -166,7 +166,6 @@ uint16_t svcmgr_id[] = {
     'I','S','e','r','v','i','c','e','M','a','n','a','g','e','r'
 };
 
-
 uint32_t do_find_service(struct binder_state *bs, const uint16_t *s, size_t len, uid_t uid, pid_t spid)
 {
     struct svcinfo *si = find_svc(s, len);

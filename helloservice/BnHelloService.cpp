@@ -19,6 +19,11 @@ status_t BnHelloService::onTransact(uint32_t code, const Parcel &data, Parcel* r
             reply->writeString8(String8("Greeting to ") + name);
             break;
         }
+        case TEST:
+        {
+            uint8_t test = data.read() + 1;
+            reply->write(test);
+        }
         default:
             return BBinder::onTransact(code, data, reply, flags);
     }

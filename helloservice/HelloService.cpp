@@ -1,5 +1,4 @@
 #include <iostream>
-
 #include <HelloService.h>
 #include <binder/IServiceManager.h>
 
@@ -32,4 +31,8 @@ String8 HelloService::sayhello() {
 
 String8 HelloService::sayhello_to(String8 name) {
     // do nothing here. Processing in function onTransact()
+}
+
+uint8_t HelloService::test(uint8_t val) {
+    
 }

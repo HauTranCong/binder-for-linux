@@ -6,10 +6,10 @@
 using namespace std;
 using namespace android;
 
-
 String16 serviceName("helloservice");
 
 int main(int argc, char *argv[]) {
+    // create a binder 
     sp<IBinder> binder;    
     sp<IServiceManager> sm = defaultServiceManager();
 
@@ -27,5 +27,7 @@ int main(int argc, char *argv[]) {
     cout << "client: recv from server: " << service->sayhello() << endl;
 
     cout << "client: recv from server: " << service->sayhello_to(String8("Jackson")) << endl;
+
+    cout << server->test((uint8_t)100) << end;
 }
 

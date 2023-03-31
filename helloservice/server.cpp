@@ -6,7 +6,6 @@
 #include <HelloService.h>
 
 
-
 using namespace std;
 using namespace android;
 
