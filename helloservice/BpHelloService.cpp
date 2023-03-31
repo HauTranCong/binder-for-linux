@@ -28,7 +28,7 @@ uint8_t BpHelloService::test(uint8_t val) {
     Parcel data, reply;
     data.write(val);
 
-    remote()->transact(SAYHELLO_TO, data, &reply);
+    remote()->transact(TEST, data, &reply);
 
     return reply.read();
 }
