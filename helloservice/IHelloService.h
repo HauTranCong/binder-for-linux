@@ -18,5 +18,5 @@ class IHelloService: public IInterface
 
     virtual String8 sayhello(void) =0;
     virtual String8 sayhello_to(String8 name) = 0;
-    virtual String8 test(String8) = 0;
+    virtual int32_t test(String8) = 0;
 };
