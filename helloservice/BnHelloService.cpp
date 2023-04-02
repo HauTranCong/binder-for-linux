@@ -21,7 +21,7 @@ status_t BnHelloService::onTransact(uint32_t code, const Parcel &data, Parcel* r
         }
         case TEST:
         {
-            uint8_t test = data.readString8();
+            String8 test = data.readString8();
             
             std::cout << "Test tring: " << test;
 
