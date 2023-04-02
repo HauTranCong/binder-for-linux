@@ -12,7 +12,7 @@ public:
 
     virtual String8 sayhello();
     virtual String8 sayhello_to(String8 name);
-    virtual uint8_t test(uint8_t);
+    virtual int32_t test(int32_t);
 private:
     static void joinThreadPool();
 };

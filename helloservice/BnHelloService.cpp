@@ -21,8 +21,8 @@ status_t BnHelloService::onTransact(uint32_t code, const Parcel &data, Parcel* r
         }
         case TEST:
         {
-            uint8_t test = (*uint8_t)data.read() + 1;
-            reply->write(test);
+            uint8_t test = data.readInt32();
+            reply->writeInt32(test);
         }
         default:
             return BBinder::onTransact(code, data, reply, flags);
