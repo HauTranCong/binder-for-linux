@@ -24,7 +24,7 @@ String8 BpHelloService::sayhello_to(String8 name)
     return reply.readString8();
 }
 
-String8 BpHelloService::test(String8 val) {
+int32_t BpHelloService::test(String8 val) {
     Parcel data, reply;
     data.writeString8(val);
 
