@@ -23,7 +23,7 @@ status_t BnHelloService::onTransact(uint32_t code, const Parcel &data, Parcel* r
         {
             String8 test = data.readString8();
             
-            std::cout << "Test tring: " << test;
+            std::cout << "Test string: " << test << "\n";
 
             reply->writeInt32(100);
         }
