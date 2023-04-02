@@ -11,5 +11,5 @@ public:
         
     virtual String8 sayhello(void);
     virtual String8 sayhello_to(String8 name);
-    virtual int32_t test(int32_t);
+    virtual String8 test(String8);
 }; 

@@ -24,9 +24,9 @@ String8 BpHelloService::sayhello_to(String8 name)
     return reply.readString8();
 }
 
-int32_t BpHelloService::test(int32_t val) {
+String8 BpHelloService::test(String8 val) {
     Parcel data, reply;
-    data.writeInt32(val);
+    data.writeString8(val);
 
     remote()->transact(TEST, data, &reply);
 

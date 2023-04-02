@@ -33,6 +33,6 @@ String8 HelloService::sayhello_to(String8 name) {
     // do nothing here. Processing in function onTransact()
 }
 
-int32_t HelloService::test(int32_t val) {
+String8 HelloService::test(String8 given) {
     
 }
