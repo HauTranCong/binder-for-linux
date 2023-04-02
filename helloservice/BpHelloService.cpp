@@ -30,5 +30,5 @@ int32_t BpHelloService::test(int32_t val) {
 
     remote()->transact(TEST, data, &reply);
 
-    return reply.read();
+    return reply.readInt32();
 }
