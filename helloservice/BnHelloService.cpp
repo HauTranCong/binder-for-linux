@@ -22,6 +22,7 @@ status_t BnHelloService::onTransact(uint32_t code, const Parcel &data, Parcel* r
         case TEST:
         {
             uint8_t test = data.readInt32();
+            test += 100;
             reply->writeInt32(test);
         }
         default:
