@@ -11,5 +11,5 @@ public:
         
     virtual String8 sayhello(void);
     virtual String8 sayhello_to(String8 name);
-    virtual int32_t test(String8);
+    virtual int32_t sumCal(uint32_t val1, uint32_t val2);
 }; 

@@ -21,11 +21,13 @@ status_t BnHelloService::onTransact(uint32_t code, const Parcel &data, Parcel* r
         }
         case TEST:
         {
-            String8 test = data.readString8();
-            
-            std::cout << "Test string: " << test << "\n";
+            uint32_t val1 = data.readInt32();
+            uint32_t val2 = data.readInt32();
+            uint32_t result = val1 + val2;
 
-            reply->writeInt32(255);
+            std::cout << "Sum result: " << result << "\n";
+
+            reply->writeInt32(result);
             break;
         }
         default:

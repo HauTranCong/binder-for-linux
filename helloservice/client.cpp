@@ -28,6 +28,6 @@ int main(int argc, char *argv[]) {
 
     cout << "client: recv from server: " << service->sayhello_to(String8("Jackson")) << endl;
 
-    cout << "client: recv from server: " << service->test(String8("Hello")) << endl;
+    cout << "client: recv from server: " << service->sumCal(100, 100) << endl;
 }
 
