@@ -24,9 +24,9 @@ String8 BpHelloService::sayhello_to(String8 name)
     return reply.readString8();
 }
 
-virtual int32_t sumCal(uint32_t val1, uint32_t val2) {
+int32_t BpHelloService::sumCal(uint32_t val1, uint32_t val2) {
     Parcel data, reply;
-    
+
     data.writeInt32(val1);
     data.writeInt32(val2);
 

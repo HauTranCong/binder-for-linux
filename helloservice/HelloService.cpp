@@ -33,6 +33,6 @@ String8 HelloService::sayhello_to(String8 name) {
     // do nothing here. Processing in function onTransact()
 }
 
-virtual int32_t sumCal(uint32_t val1, uint32_t val2) {
+int32_t HelloService::sumCal(uint32_t val1, uint32_t val2) {
     
 }
