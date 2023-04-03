@@ -12,7 +12,7 @@ public:
 
     virtual String8 sayhello();
     virtual String8 sayhello_to(String8 name);
-    virtual int32_t test(String8 given);
+    virtual int32_t sumCal(uint32_t val1, uint32_t val2) = 0;
 private:
     static void joinThreadPool();
 };
