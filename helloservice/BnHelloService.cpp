@@ -26,6 +26,7 @@ status_t BnHelloService::onTransact(uint32_t code, const Parcel &data, Parcel* r
             std::cout << "Test string: " << test << "\n";
 
             reply->writeInt32(255);
+            break;
         }
         default:
             return BBinder::onTransact(code, data, reply, flags);
